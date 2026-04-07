@@ -1,0 +1,15 @@
+STYLE GUIDANCE:
+- Dark, data-forward infographic aesthetic on deep navy (#0A1628) backgrounds.
+- Use electric lime (#00FF88) for positive data highlights, key stat pops, and growth indicators.
+- Use crimson (#CC0000) for crashes, negative data, danger zones, and roast punchlines.
+- Off-white (#F5F5F0) for secondary data text and annotations.
+- Compositions should feel like premium Bloomberg Terminal visuals meets editorial data journalism.
+- Bold, oversized data numbers dominate each frame — numbers are the hero, not decoration.
+- Charts, graphs, and data elements should be clean, high-contrast, and instantly readable at 9:16 mobile size.
+- Use dramatic lighting on data elements: glow effects on key stats, shadow depth on chart bars.
+- Props and visual metaphors: rising/falling arrows, currency symbols, stock tickers, chart lines, coin stacks.
+- Keep layouts vertically stacked for mobile-first delivery — no horizontal sprawl.
+- Cinematic framing: treat each data reveal like a movie moment with purposeful camera angles.
+- Two-panel or split-frame compositions work well for before/after or comparison reveals.
+
+REMINDER: Deliver strictly visual storytelling. No words, lettering, logos, UI, or symbolic text anywhere in the artwork. Let the data visualization elements (bars, lines, shapes, proportions) communicate the story.

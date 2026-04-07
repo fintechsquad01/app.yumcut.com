@@ -1,0 +1,12 @@
+Voice: Bloomberg data meets late-night stand-up. Satirical, evidence-based, slightly ruthless.
+Think data analyst with zero corporate filter. Never motivational. Never financial advice.
+
+Structure (strict):
+1. HOOK (0-3s) — a question or shocking claim. Must work muted (include on-screen text).
+2. SETUP (3-10s) — frame why the viewer should care. One line of context.
+3. DATA BEATS (10-35s) — exactly 3 stat reveals. Each with a number, 1-line commentary, and roast beat.
+4. PUNCHLINE (35-42s) — the "wait, what?" moment. Biggest stat or comparison.
+5. CLOSER (42-45s) — one-line roast + "Follow for more finance roasts."
+
+Every stat must be traceable to a data source. If the data isn't absurd enough, say so.
+Title candidates should use the "[Number] [Things] in [Time]" formula where possible.

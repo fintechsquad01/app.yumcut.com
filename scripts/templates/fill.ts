@@ -119,6 +119,8 @@ const horrorPromptPath = resolvePromptFile(
 const ART_STYLE_PROMPT_PATH = {
   basicCartoon: path.resolve(process.cwd(), 'content/prompts/basic-cartoon-style.txt'),
   neoNoir: path.resolve(process.cwd(), 'content/prompts/neo-noir-style.txt'),
+  financeDataviz: path.resolve(process.cwd(), 'content/prompts/finance-dataviz-style.txt'),
+  financeRoast: path.resolve(process.cwd(), 'content/prompts/finance-roast-style.txt'),
   creepyFaces: creepyFacesPromptPath,
   simpsons: simpsonsPromptPath,
   bubbleGum: bubbleGumPromptPath,
@@ -143,6 +145,7 @@ const CAPTION_PRESETS = [
   { key: 'monoblock', title: 'Mono Block', description: 'Bold monochrome block preset.' },
   { key: 'cyberwave', title: 'Cyber Wave', description: 'Futuristic cyber caption preset.' },
   { key: 'goldstandard', title: 'Gold Standard', description: 'Premium gold-accent caption preset.' },
+  { key: 'financegold', title: 'Finance Gold', description: 'Premium gold-accent finance caption preset with dark backgrounds.' },
 ] as const;
 const VOICE_LANGUAGES: Record<string, string> = {
   brittney: 'cs-CZ,de-DE,en-US,es-ES,hi-IN,hr-HR,hu-HU,it-IT,ko-KR,pl-PL,pt-PT,ro-RO,ru-RU,sv-SE',
@@ -600,6 +603,16 @@ async function ensureArtStyles(ownerId: string) {
       description: 'Intense horror imagery with very scary, high-contrast lighting and atmosphere.',
       pathKey: 'horror' as const,
     },
+    {
+      title: 'Finance Data Viz',
+      description: 'Dark navy data-forward infographic style with lime and crimson accents for finance charts and data reveals.',
+      pathKey: 'financeDataviz' as const,
+    },
+    {
+      title: 'Finance Roast',
+      description: 'Bold editorial cartoon style with satirical energy for finance humor, roasts, and commentary.',
+      pathKey: 'financeRoast' as const,
+    },
   ];
 
   const result = {} as Record<keyof typeof ART_STYLE_PROMPT_PATH, { id: string }>;
@@ -794,6 +807,8 @@ async function main() {
   const spongeBobArtStyle = artStyles.spongeBob;
   const halloweenArtStyle = artStyles.halloween;
   const horrorArtStyle = artStyles.horror;
+  const financeDatavizArtStyle = artStyles.financeDataviz;
+  const financeRoastArtStyle = artStyles.financeRoast;
   const captionStyles = await ensureCaptionsStyles();
   const seededVoices = await ensureVoices();
   const providerPriority: VoiceProviderType[] = ['inworld', 'minimax'];
@@ -815,6 +830,15 @@ async function main() {
     seededVoices.find((voice) => voice.gender === 'female')?.id ??
     seededVoices[0]?.id ??
     null;
+
+  const fastMaleVoiceId =
+    findPreferredVoice((voice) => voiceSupportsLanguageCode(voice, 'en') && voice.gender === 'male' && voice.speed === 'fast') ??
+    findPreferredVoice((voice) => voiceSupportsLanguageCode(voice, 'en') && voice.gender === 'male') ??
+    findPreferredVoice((voice) => voice.gender === 'male' && voice.speed === 'fast') ??
+    findPreferredVoice((voice) => voice.gender === 'male') ??
+    seededVoices.find((voice) => voice.gender === 'male' && voice.speed === 'fast')?.id ??
+    seededVoices.find((voice) => voice.gender === 'male')?.id ??
+    fastFemaleVoiceId;
 
   // When yumcut-shorts-tools v2 runs, it picks an effects JSON whose filename matches the template code.
   // If a template-specific JSON does not exist, copy `basic.json` to `<code>.json` so the runtime can fall back gracefully.
@@ -1103,6 +1127,82 @@ async function main() {
       artStyleId: neoNoirArtStyle?.id,
       captionsStyleId: captionStyles.monoblock?.id ?? captionStyles.acid?.id,
       voiceId: fastFemaleVoiceId || undefined,
+    },
+    // --- Finance Roast Central templates ---
+    {
+      code: 'finance_roast',
+      title: 'Finance Roast',
+      description: 'Satirical finance commentary with editorial cartoon energy. Book summaries, famous investor profiles, meme analysis, and bad advice roasts.',
+      previewImageUrl: '/template/finance-roast/preview.jpg',
+      previewVideoUrl: '/template/finance-roast/preview.mp4',
+      textPrompt:
+        'Write a satirical finance roast in the style of a data analyst doing late-night stand-up. Voice: Bloomberg data meets comedy. Structure: shocking hook (0-3s), one-line context setup (3-10s), exactly 3 data-backed roast beats with stats and dry commentary (10-35s), a "wait, what?" punchline stat (35-42s), and a one-line roast closer (42-45s). Every stat must be real and traceable. Never give financial advice. Roast ideas and institutions, not viewers.',
+      weight: 0,
+      overlayId: sparklesOverlay.id,
+      musicId: defaultMusic.id,
+      artStyleId: financeRoastArtStyle?.id,
+      captionsStyleId: captionStyles.financegold?.id ?? captionStyles.goldstandard?.id ?? captionStyles.acid?.id,
+      voiceId: fastMaleVoiceId || undefined,
+    },
+    {
+      code: 'finance_dataviz',
+      title: 'Finance Data Viz',
+      description: 'Data-driven chart animations for finance Shorts. Bar chart races, crisis timelines, wealth scale comparisons, and economic trend reveals.',
+      previewImageUrl: '/template/finance-dataviz/preview.jpg',
+      previewVideoUrl: '/template/finance-dataviz/preview.mp4',
+      textPrompt:
+        'Write narration for a finance data visualization Short. Voice: dry data analyst with zero corporate filter. Structure: question hook that the data answers (0-3s), one-line context (3-10s), 3 escalating stat reveals with commentary (10-35s), the biggest shocking comparison (35-42s), one-line roast closer (42-45s). Every number must be sourced. Use the "[Number] [Things] in [Time]" title formula.',
+      weight: 0,
+      overlayId: sparklesOverlay.id,
+      musicId: defaultMusic.id,
+      artStyleId: financeDatavizArtStyle?.id,
+      captionsStyleId: captionStyles.financegold?.id ?? captionStyles.goldstandard?.id ?? captionStyles.acid?.id,
+      voiceId: fastMaleVoiceId || undefined,
+    },
+    {
+      code: 'finance_news',
+      title: 'Finance News Roast',
+      description: 'Satirical weekly takes on financial news, investment mistakes, and market absurdity with data-backed commentary.',
+      previewImageUrl: '/template/finance-news/preview.jpg',
+      previewVideoUrl: '/template/finance-news/preview.mp4',
+      textPrompt:
+        'Write a satirical finance news reaction Short. Voice: Bloomberg data meets late-night stand-up. React to a real financial news event or common investment mistake with data. Structure: shocking claim hook (0-3s), quick news context (3-10s), 3 stat-backed roast beats dismantling the topic (10-35s), absurd comparison punchline (35-42s), one-line roast closer (42-45s). Never give financial advice.',
+      weight: 0,
+      overlayId: sparklesOverlay.id,
+      musicId: defaultMusic.id,
+      artStyleId: financeRoastArtStyle?.id,
+      captionsStyleId: captionStyles.financegold?.id ?? captionStyles.goldstandard?.id ?? captionStyles.acid?.id,
+      voiceId: fastMaleVoiceId || undefined,
+    },
+    {
+      code: 'finance_whatif',
+      title: 'Finance What-If',
+      description: 'Hypothetical financial chaos scenarios and tool reviews. "If Elon Ran the Fed", "If Inflation Hit 50%", and financial tool critiques.',
+      previewImageUrl: '/template/finance-whatif/preview.jpg',
+      previewVideoUrl: '/template/finance-whatif/preview.mp4',
+      textPrompt:
+        'Write a "what-if" finance scenario Short. Voice: data analyst imagining absurd financial realities with satirical glee. Structure: provocative hypothetical hook (0-3s), why it matters setup (3-10s), 3 escalating consequences backed by real economic data (10-35s), the most absurd logical conclusion (35-42s), dry roast closer (42-45s). Ground every claim in real data even if the premise is wild.',
+      weight: 0,
+      overlayId: sparklesOverlay.id,
+      musicId: defaultMusic.id,
+      artStyleId: financeRoastArtStyle?.id,
+      captionsStyleId: captionStyles.financegold?.id ?? captionStyles.goldstandard?.id ?? captionStyles.acid?.id,
+      voiceId: fastMaleVoiceId || undefined,
+    },
+    {
+      code: 'finance_podcast',
+      title: 'Finance Podcast Roast',
+      description: 'Satirical summaries of finance podcasts: How I Built This, Planet Money, Freakonomics, Dave Ramsey rants, and BiggerPockets highlights.',
+      previewImageUrl: '/template/finance-podcast/preview.jpg',
+      previewVideoUrl: '/template/finance-podcast/preview.mp4',
+      textPrompt:
+        'Write a satirical podcast summary Short for a finance/economics podcast episode. Voice: data analyst who listened so you don\'t have to. Structure: provocative takeaway hook (0-3s), what the episode was about (3-10s), 3 key claims from the podcast with your data-backed commentary and dry humor (10-35s), the most surprising or absurd conclusion (35-42s), roast closer (42-45s). No financial advice.',
+      weight: 0,
+      overlayId: sparklesOverlay.id,
+      musicId: defaultMusic.id,
+      artStyleId: financeRoastArtStyle?.id,
+      captionsStyleId: captionStyles.financegold?.id ?? captionStyles.goldstandard?.id ?? captionStyles.acid?.id,
+      voiceId: fastMaleVoiceId || undefined,
     },
   ];
 
