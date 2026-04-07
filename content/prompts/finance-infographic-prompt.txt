@@ -1,0 +1,23 @@
+Generate a premium vertical infographic (9:16 aspect ratio) with a dark navy (#0A1628) background. Use a data-forward editorial design language:
+
+LAYOUT:
+- Hero section at top with one large bold stat number in electric lime (#00FF88), minimum 72pt equivalent
+- 3 supporting data modules stacked vertically below, each with a clean chart element (bar, line, or donut)
+- Each module has a stat number + one-line commentary in off-white (#F5F5F0)
+- Crimson (#CC0000) accent for negative data points or danger indicators
+- Bottom attribution bar with subtle source citation
+
+STYLE:
+- Clean financial terminal aesthetic — no gradients, no soft glow
+- Sharp geometric elements, precise grid alignment
+- Data labels in condensed bold sans-serif (like Barlow Condensed)
+- Commentary text in clean sans-serif (like Inter)
+- High contrast: bright data elements pop against the dark background
+- Thin rule lines (#1A2A3D) separating modules
+
+MOOD:
+- Authoritative but edgy — Bloomberg Terminal meets editorial magazine
+- Every element should feel intentional and information-dense
+- No decorative flourishes — data is the decoration
+
+REMINDER: No text, lettering, or readable words in the image. Use shapes, bars, lines, and visual proportions to communicate data relationships.

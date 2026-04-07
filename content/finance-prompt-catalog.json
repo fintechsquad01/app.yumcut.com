@@ -1,0 +1,139 @@
+{
+  "version": "1.0.0",
+  "channel": "Finance Roast Central",
+  "description": "Curated image generation prompt catalog for the finance Shorts channel. Organized by content pillar and visual type. Adapted from Nano Banana Pro prompt patterns.",
+  "brandColors": {
+    "navy": "#0A1628",
+    "lime": "#00FF88",
+    "crimson": "#CC0000",
+    "offWhite": "#F5F5F0",
+    "gold": "#FFD700",
+    "darkText": "#8899AA"
+  },
+  "categories": [
+    {
+      "id": "dataviz",
+      "label": "Data Visualization",
+      "pillar": "Data-Viz Shocks",
+      "promptFile": "content/prompts/finance-dataviz-style.txt",
+      "description": "Dark infographic aesthetic for chart animations and data reveal scenes"
+    },
+    {
+      "id": "infographic",
+      "label": "Infographic Frames",
+      "pillar": "Data-Viz Shocks",
+      "promptFile": "content/prompts/finance-infographic-prompt.txt",
+      "description": "Premium vertical infographic layouts with data modules and stat heroes"
+    },
+    {
+      "id": "thumbnail",
+      "label": "YouTube Thumbnails",
+      "pillar": "All Pillars",
+      "promptFile": "content/prompts/finance-thumbnail-prompt.txt",
+      "description": "High-impact vertical thumbnails with cinematic lighting and financial visual metaphors"
+    },
+    {
+      "id": "editorial-cartoon",
+      "label": "Editorial Cartoons",
+      "pillar": "Book Summaries, Famous Investors, Investment Mistakes, Meme Analysis",
+      "promptFile": "content/prompts/finance-editorial-cartoon-prompt.txt",
+      "description": "Bold satirical caricatures for roast-format content"
+    },
+    {
+      "id": "crisis-scene",
+      "label": "Crisis Scenes",
+      "pillar": "Financial News, Data-Viz Shocks",
+      "promptFile": "content/prompts/finance-crisis-scene-prompt.txt",
+      "description": "Dramatic cinematic renders of economic crashes and turning points"
+    },
+    {
+      "id": "roast-scene",
+      "label": "Roast Scenes",
+      "pillar": "Book Summaries, Podcast Summaries, What-If Scenarios",
+      "promptFile": "content/prompts/finance-roast-style.txt",
+      "description": "Editorial cartoon energy for satirical commentary"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "infographic-bento-grid",
+      "category": "infographic",
+      "title": "Finance Bento Grid Infographic",
+      "model": "nano-banana-pro:default",
+      "prompt": "Generate a premium vertical (9:16) Bento grid infographic on deep navy (#0A1628) background. 6 modules arranged in asymmetric grid: one large hero module (40% width) showing a bold chart element in electric lime (#00FF88), three medium stat cards with single-number callouts, one comparison module with before/after bars, and one source attribution strip. Clean sans-serif typography feel, sharp geometric borders (#1A2A3D), high contrast data elements. Financial terminal aesthetic. No text or lettering — use visual proportions, bar heights, and chart shapes to communicate data relationships.",
+      "tags": ["infographic", "bento", "data", "charts"]
+    },
+    {
+      "id": "thumbnail-money-explosion",
+      "category": "thumbnail",
+      "title": "Exploding Money Stack Thumbnail",
+      "model": "nano-banana-pro:default",
+      "prompt": "Cinematic 9:16 vertical scene: a towering stack of gold coins and green dollar bills mid-explosion against a deep navy (#0A1628) void. Bills scatter in all directions with motion blur. The explosion center glows electric lime (#00FF88) with volumetric light rays. Crimson (#CC0000) sparks fly from the impact point. Shallow depth of field, anamorphic lens flare, photorealistic 3D render. Film grain overlay. Maximum drama, maximum urgency — a single frame that screams 'something massive just happened to money.' No text or lettering.",
+      "tags": ["thumbnail", "money", "explosion", "dramatic"]
+    },
+    {
+      "id": "thumbnail-chart-crash",
+      "category": "thumbnail",
+      "title": "Crashing Stock Chart Thumbnail",
+      "model": "nano-banana-pro:default",
+      "prompt": "Cinematic 9:16 vertical shot: a massive glowing stock chart line in electric lime (#00FF88) that was climbing steadily, then suddenly plunges straight down through the bottom of the frame. The falling section turns crimson (#CC0000) with trailing light particles. Deep navy (#0A1628) background. The chart line appears to shatter the 'floor' with cracks spreading like breaking glass, glowing crimson through the fractures. Volumetric fog, dramatic spotlight from above, photorealistic 3D render with film grain. The single most dramatic chart crash imaginable. No text.",
+      "tags": ["thumbnail", "crash", "chart", "stock-market"]
+    },
+    {
+      "id": "editorial-confused-trader",
+      "category": "editorial-cartoon",
+      "title": "Bewildered Wall Street Trader",
+      "model": "nano-banana-pro:default",
+      "prompt": "Editorial cartoon illustration (9:16 vertical): A caricature of a frantic Wall Street trader with exaggerated wide eyes, loosened tie, coffee spilling, surrounded by multiple screens showing falling charts. Deep navy (#0A1628) background. The trader's shocked expression is the clear focal point — oversized head, tiny body, dramatic sweat drops. Crimson (#CC0000) chart arrows pointing down on screens. Electric lime (#00FF88) highlights on the trader's face from screen glow. Thick ink outlines, halftone dot textures in shadows, clean flat color fills. New Yorker cartoon meets Bloomberg terminal energy. No text, speech bubbles, or lettering.",
+      "tags": ["editorial", "cartoon", "trader", "reaction"]
+    },
+    {
+      "id": "editorial-money-printer",
+      "category": "editorial-cartoon",
+      "title": "Money Printer Goes Brrr",
+      "model": "nano-banana-pro:default",
+      "prompt": "Editorial cartoon (9:16 vertical): A massive industrial money printer machine spewing out sheets of dollar bills in a chaotic fountain. A small caricature figure in a suit stands at the controls looking smugly satisfied while bills fill the room like a snowstorm. Deep navy (#0A1628) background. Electric lime (#00FF88) glow from the printer mechanism. Bills rendered in off-white (#F5F5F0) with slight green tint. Thick ink outlines, editorial print style, halftone textures. Satirical energy — the absurdity of printing unlimited money visualized at cartoon scale. No text or lettering.",
+      "tags": ["editorial", "cartoon", "fed", "money-printing"]
+    },
+    {
+      "id": "crisis-bank-dominoes",
+      "category": "crisis-scene",
+      "title": "Bank Collapse Domino Chain",
+      "model": "nano-banana-pro:default",
+      "prompt": "Cinematic 9:16 scene: A chain of massive marble bank buildings arranged like dominos, mid-collapse. The first three have already fallen, crashing into each other with debris clouds. The remaining buildings lean ominously. Deep navy (#0A1628) sky with crimson (#CC0000) storm clouds. Electric lime (#00FF88) lightning strikes in the background. Volumetric dust and particle effects. Camera angle: dramatic low perspective looking up at the falling buildings. Photorealistic 3D render, film grain, anamorphic bokeh. The visual metaphor of systemic financial contagion made terrifyingly real. No text.",
+      "tags": ["crisis", "banks", "collapse", "domino"]
+    },
+    {
+      "id": "crisis-inflation-fire",
+      "category": "crisis-scene",
+      "title": "Inflation Burning Through Savings",
+      "model": "nano-banana-pro:default",
+      "prompt": "Cinematic 9:16 scene: A giant piggy bank made of rose gold ceramic, slowly melting from the bottom up. Crimson (#CC0000) flames lick upward around its base. Gold coins stream out of cracks and dissolve mid-air into ash. The background is deep navy (#0A1628) with an ominous orange-red glow from below. The piggy bank's expression (if stylized) shifts from happy to alarmed. Photorealistic 3D render with cinematic lighting, shallow depth of field on the melting point. Smoke and ember particle effects rise past camera. The feeling of watching savings evaporate in slow motion. No text.",
+      "tags": ["crisis", "inflation", "savings", "melting"]
+    },
+    {
+      "id": "dataviz-bar-race-frame",
+      "category": "dataviz",
+      "title": "Bar Chart Race Static Frame",
+      "model": "nano-banana-pro:default",
+      "prompt": "Clean data visualization frame (9:16 vertical): 10 horizontal bars ranked vertically on deep navy (#0A1628) background. Top 3 bars in electric lime (#00FF88) with a subtle glow. Middle bars in muted blue (#4285F4). Bottom bars in off-white (#F5F5F0) at low opacity. Each bar has different lengths showing clear ranking. Large bold year number '2024' in bottom right in lime, 52pt equivalent. Thin horizontal grid lines (#1A2A3D). Clean condensed sans-serif label aesthetic next to each bar. Premium financial terminal style — sharp edges, no curves, no gradients. No readable text or lettering — use abstract label-shaped blocks.",
+      "tags": ["dataviz", "bar-race", "ranking", "chart"]
+    },
+    {
+      "id": "scale-comparison-coins",
+      "category": "dataviz",
+      "title": "Wealth Scale — Coin Stack Comparison",
+      "model": "nano-banana-pro:default",
+      "prompt": "Dramatic 9:16 scene: Three coin stacks side by side on deep navy (#0A1628) surface. Left stack: a tiny pile of 5 copper coins (representing median salary). Middle stack: a modest silver column (representing millionaire). Right stack: an impossibly tall gold column that extends far beyond the top of frame, so tall you can't see the top — it fades into darkness above. Dramatic spotlight from the right casting long shadows. The scale difference is the entire point — the gold column should feel infinite. Cinematic 3D render, shallow depth of field focused on the base of the gold column. Off-white (#F5F5F0) surface reflections. No text.",
+      "tags": ["dataviz", "wealth", "scale", "comparison", "coins"]
+    },
+    {
+      "id": "roast-avocado-toast",
+      "category": "roast-scene",
+      "title": "Avocado Toast vs House Down Payment",
+      "model": "nano-banana-pro:default",
+      "prompt": "Editorial cartoon (9:16 vertical): Split scene — top half shows a single piece of artisan avocado toast on a fancy plate, glowing with a golden halo and sparkles, looking absurdly precious. Bottom half shows a tiny miniature house sitting on a plate, looking dejected and cracked. A caricature hand reaches for the toast with hearts in the eyes. Deep navy (#0A1628) background. Electric lime (#00FF88) glow around the toast, crimson (#CC0000) aura around the neglected house. Thick ink outlines, halftone textures, editorial cartoon style. The visual absurdity of the 'just stop buying avocado toast' financial advice. No text or lettering.",
+      "tags": ["roast", "avocado-toast", "housing", "myth"]
+    }
+  ]
+}
