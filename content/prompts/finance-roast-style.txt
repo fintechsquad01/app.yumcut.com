@@ -10,5 +10,6 @@ STYLE GUIDANCE:
 - High contrast and bold silhouettes that read instantly at mobile phone size.
 - Cinematic lighting: dramatic spotlight on subject, dark surroundings for comedic emphasis.
 - Use scale contrast to make abstract quantities visceral — tiny person vs enormous structure.
+- Each image should feel like the next scene in a story — show progression, change, or escalation from the previous frame. Maintain character/subject continuity across scenes.
 
 REMINDER: Deliver strictly visual storytelling. No words, lettering, logos, speech bubbles, UI, or symbolic text anywhere in the artwork. Expressions, props, and body language communicate the joke.

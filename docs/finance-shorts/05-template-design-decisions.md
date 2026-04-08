@@ -4,20 +4,39 @@
 
 This document captures the rationale behind every design decision for the YumCut finance Shorts templates. All decisions are informed by competitive research (see docs 01-04 in this directory).
 
-## Templates: 3 (Consolidated from 5)
+## Critical Pipeline Fix: textPrompt → LLM Wiring
 
-### Kept
+**Discovery:** The template's `textPrompt` field was stored in the DB but NEVER sent to the LLM. The daemon read only `jobPayload.prompt` (user input). All template textPrompts were dead code.
+
+**Fix:** 3 files changed to wire textPrompt into the script generation:
+1. Creation snapshot API now includes `template.textPrompt`
+2. CreationSnapshot type includes `textPrompt` field
+3. Script phase prepends `template.textPrompt` before user's prompt as: `[textPrompt]\n\nTopic: [user input]`
+
+**Impact:** All templates (not just finance) now have their textPrompt influence the generated script. This is how the textPrompts were designed to work — as system instructions that shape how the LLM writes for any user topic.
+
+## Templates: 3 (Renamed from Phase 1)
+
+### Phase 2: Renamed to Remove Format Lock
+Templates were renamed to be tone-flexible, not locked to "roast" or satire:
+
 | Template | Code | Art Style | Purpose |
 |----------|------|-----------|---------|
-| Finance Roast | `finance_roast` | Editorial Cartoon | Core satirical finance commentary — roasts bad takes, institutions, and financial absurdity |
-| Finance Data Viz | `finance_dataviz` | Visual Metaphor | Data storytelling through cinematic metaphors — wealth scale, crisis timelines, "the math they never showed you" |
-| Finance What-If | `finance_whatif` | Editorial Cartoon (shared with Roast) | Hypothetical scenarios with real economic logic — "What if rent was illegal?" |
+| Finance Story | `finance_story` | Editorial Cartoon | Versatile finance storytelling — any topic, any tone (satirical/dramatic/educational/trending) |
+| Finance Reveal | `finance_reveal` | Visual Metaphor | Data stair-stepping — follow one number on a journey from relatable to incomprehensible |
+| Finance Scenario | `finance_scenario` | Editorial Cartoon (shared) | What-if hypotheticals with real economic consequences — trending scenarios |
 
-### Removed
+### Why Renamed (from `finance_roast`, `finance_dataviz`, `finance_whatif`)
+- `finance_roast` locked the tone to satire. Top finance channels (Nick Invests, Primate Economics, Crayon Capital) are flexible.
+- `finance_story` is the workhorse — any finance topic told as a story, adaptable to trends
+- `finance_reveal` is the data format — the MrBeast stair-stepping principle applied to finance
+- `finance_scenario` is the imagination format — trending hypotheticals with chain-reaction consequences
+
+### Removed (Phase 1)
 | Template | Code | Reason |
 |----------|------|--------|
-| Finance News Roast | `finance_news` | Overlaps with `finance_roast` — news reactions are just topical roasts |
-| Finance Podcast Roast | `finance_podcast` | Too niche for a standalone template — podcast summaries can use the roast template |
+| Finance News Roast | `finance_news` | Overlaps with `finance_story` |
+| Finance Podcast Roast | `finance_podcast` | Too niche — podcast summaries can use `finance_story` |
 
 ## Art Style: Editorial Cartoon (Economist/TIME)
 

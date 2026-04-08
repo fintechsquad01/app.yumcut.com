@@ -172,7 +172,11 @@ export async function handleScriptPhase(args: ScriptPhaseArgs) {
         output: scriptText,
       });
     } else {
-      const effectivePrompt = (prompt || '').trim();
+      const templateTextPrompt = cfg.template?.textPrompt?.trim() || '';
+      const userPrompt = (prompt || '').trim();
+      const effectivePrompt = templateTextPrompt
+        ? (userPrompt ? `${templateTextPrompt}\n\nTopic: ${userPrompt}` : templateTextPrompt)
+        : userPrompt;
       if (!effectivePrompt) {
         throw new Error('Prompt is required for script generation');
       }

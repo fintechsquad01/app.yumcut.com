@@ -375,6 +375,7 @@ export async function getCreationSnapshot(projectId: string): Promise<{
     previewImageUrl?: string | null;
     previewVideoUrl?: string | null;
     customData?: TemplateCustomData | null;
+    textPrompt?: string | null;
     overlay?: {
       id: string;
       title?: string | null;

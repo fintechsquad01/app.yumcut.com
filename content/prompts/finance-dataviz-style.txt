@@ -9,5 +9,6 @@ STYLE GUIDANCE:
 - Composition: dramatic wide shots or low angles for maximum impact, 9:16 vertical, cinematic foreshortening.
 - Painterly quality with visible brushstroke texture — gouache or thick ink feel, not smooth digital render.
 - Shallow depth of field effect where appropriate — sharp subject, softer background for focus.
+- Each image should feel like the next scene in a story — show progression, change, or escalation from the previous frame. The visual metaphor should evolve across scenes, not repeat.
 
 REMINDER: Deliver strictly visual storytelling. No words, numbers, lettering, data labels, chart axes, or readable elements anywhere. Pure visual atmosphere — captions and data overlays are added separately in video production.

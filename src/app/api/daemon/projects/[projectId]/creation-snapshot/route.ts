@@ -249,6 +249,7 @@ const voiceQueryWhere = candidateVoiceIds.length > 0
           previewImageUrl: project.template.previewImageUrl,
           previewVideoUrl: project.template.previewVideoUrl,
           customData: normalizeTemplateCustomData(project.template.customData),
+          textPrompt: project.template.textPrompt || null,
           overlay: project.template.overlay
             ? {
                 id: project.template.overlay.id,
