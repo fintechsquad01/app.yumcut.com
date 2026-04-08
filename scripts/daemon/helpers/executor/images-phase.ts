@@ -70,10 +70,6 @@ export async function handleImagesPhase({ projectId, cfg, jobPayload, daemonConf
       });
     }
     const imagesLogDir = await ensureLanguageLogDir(primaryInfo, 'images');
-    // Read optional image model/provider from template customData (e.g., { imageModel: 'nano-banana-pro:default', imageProvider: 'nano-banana-pro' })
-    const templateRaw = cfg.template?.customData?.raw as Record<string, unknown> | undefined;
-    const imageModel = typeof templateRaw?.imageModel === 'string' ? templateRaw.imageModel : undefined;
-    const imageProvider = typeof templateRaw?.imageProvider === 'string' ? templateRaw.imageProvider : undefined;
     const imagesResult = await generateImages({
       projectId,
       workspaceRoot: sharedImagesWorkspace,
@@ -83,8 +79,6 @@ export async function handleImagesPhase({ projectId, cfg, jobPayload, daemonConf
       characterImagePath,
       stylePromptPath,
       newCharacter: dynamicSelected,
-      llmModel: imageModel,
-      llmProvider: imageProvider,
       generator: 'v2',
       scriptMode: daemonConfig.scriptMode,
     });

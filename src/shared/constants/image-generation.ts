@@ -1,4 +1,4 @@
-export type ImageGenerationProviderId = 'runware' | 'nano-banana-pro';
+export type ImageGenerationProviderId = 'runware';
 
 export type ImageGenerationModel = {
   id: string;
@@ -18,13 +18,6 @@ export const IMAGE_GENERATION_PROVIDERS: ImageGenerationProvider[] = [
     label: 'Runware',
     models: [
       { id: 'runware:108@1', label: 'Qwen Image (base)', provider: 'runware' },
-    ],
-  },
-  {
-    id: 'nano-banana-pro',
-    label: 'Nano Banana Pro',
-    models: [
-      { id: 'nano-banana-pro:default', label: 'Nano Banana Pro (default)', provider: 'nano-banana-pro' },
     ],
   },
 ] as const;

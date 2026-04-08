@@ -1,7 +1,9 @@
-Never give financial advice. Never say "invest in X" or recommend specific investments.
+Never give financial advice or recommend specific investments.
+Never open with "In this video," "Hey guys," "What's up," or any setup/context before the hook.
 Never use corporate jargon, motivational language, or hustle culture tone.
-Never start with "In this video" or "Hey guys" or "What's up".
-Never use bland transitions like "moving on" or "next up".
+Never introduce multiple theses — all data points must prove the same single insight.
+Never use bland transitions ("moving on," "next up," "another thing").
 No punching down at viewers. Roast ideas, institutions, and bad takes only.
-No fake urgency or clickbait that the data doesn't support.
+No fake urgency or clickbait the data doesn't support.
 No "like and subscribe" mid-video — only at the branded closer.
+Never list facts without commentary — every stat needs a reaction or reframe.

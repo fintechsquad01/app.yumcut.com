@@ -52,5 +52,3 @@ tests/daemon-and-api/.tmp
 # dummy script deps
 tests/daemon/dummy-scripts/**/node_modules
 
-# finance demo video output (regenerate with python scripts)
-scripts/finance-demos/output/

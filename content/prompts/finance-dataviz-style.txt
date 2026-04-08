@@ -1,15 +1,13 @@
 STYLE GUIDANCE:
-- Dark, data-forward infographic aesthetic on deep navy (#0A1628) backgrounds.
-- Use electric lime (#00FF88) for positive data highlights, key stat pops, and growth indicators.
-- Use crimson (#CC0000) for crashes, negative data, danger zones, and roast punchlines.
-- Off-white (#F5F5F0) for secondary data text and annotations.
-- Compositions should feel like premium Bloomberg Terminal visuals meets editorial data journalism.
-- Bold, oversized data numbers dominate each frame — numbers are the hero, not decoration.
-- Charts, graphs, and data elements should be clean, high-contrast, and instantly readable at 9:16 mobile size.
-- Use dramatic lighting on data elements: glow effects on key stats, shadow depth on chart bars.
-- Props and visual metaphors: rising/falling arrows, currency symbols, stock tickers, chart lines, coin stacks.
-- Keep layouts vertically stacked for mobile-first delivery — no horizontal sprawl.
-- Cinematic framing: treat each data reveal like a movie moment with purposeful camera angles.
-- Two-panel or split-frame compositions work well for before/after or comparison reveals.
+- Cinematic visual metaphor illustration that makes abstract financial data visceral and emotional — NOT literal charts or graphs.
+- Translate data stories into physical metaphors: a skyscraper shaped like a bar chart shattering for market crashes, a country folding origami-style into a briefcase for recession, a mountain-sized printing press for QE, a golden palace floating above flooded streets for wealth inequality.
+- Style: conceptual editorial illustration reminiscent of Der Spiegel or The Economist cover art — clean, intentional, muted but not childish.
+- Color palette: deep navy (#0A1628) backgrounds and shadows, electric lime (#00FF88) for growth and positive reveals, crimson (#CC0000) for crashes and danger, gold (#FFD700) for wealth and money.
+- Use familiar objects made strange — everyday items (grocery baskets, buildings, briefcases) with financial logic applied in surreal ways.
+- Scale contrast is essential: tiny humans next to enormous financial forces makes incomprehensible numbers feel real.
+- Color as narrative: warm-to-cold transitions carry stories (prosperity gold to crisis grey). A single image should feel like a scene from a story, not a data display.
+- Composition: dramatic wide shots or low angles for maximum impact, 9:16 vertical, cinematic foreshortening.
+- Painterly quality with visible brushstroke texture — gouache or thick ink feel, not smooth digital render.
+- Shallow depth of field effect where appropriate — sharp subject, softer background for focus.
 
-REMINDER: Deliver strictly visual storytelling. No words, lettering, logos, UI, or symbolic text anywhere in the artwork. Let the data visualization elements (bars, lines, shapes, proportions) communicate the story.
+REMINDER: Deliver strictly visual storytelling. No words, numbers, lettering, data labels, chart axes, or readable elements anywhere. Pure visual atmosphere — captions and data overlays are added separately in video production.

@@ -1,13 +1,14 @@
 STYLE GUIDANCE:
-- Bold editorial cartoon illustration with satirical energy and expressive character acting.
-- Color palette anchored on deep navy (#0A1628) with electric lime (#00FF88) accents and crimson (#CC0000) for punchline moments.
-- Caricature-friendly proportions: exaggerated expressions, dramatic poses, over-the-top reactions.
-- Think political cartoon meets late-night comedy show graphics — sharp, opinionated, visually loud.
-- Characters should look like they just heard the most absurd financial take imaginable.
-- Use visual metaphors for money, greed, loss, and absurdity: burning cash, sinking ships, rocket launches, empty wallets, money printers going brrr.
-- Backgrounds can be simple or contextual (trading floor chaos, boardroom drama, street-level reality).
-- High contrast and bold silhouettes that read instantly at 9:16 vertical delivery size.
-- Lighting should be dramatic — spotlight on the subject, dark surroundings for comedic emphasis.
-- Compositions should feel punchy and immediate, like a single-panel editorial cartoon brought to life.
+- Editorial cartoon illustration in the tradition of The Economist and TIME Magazine covers — bold, satirical, visually loud.
+- Caricature characters with oversized heads, exaggerated expressions, and dramatic body language reacting to financial absurdity — shock, disbelief, smug satisfaction.
+- Lead with visual metaphors: burning cash, crumbling gold buildings, sinking ships, money printers, golden chains on wrists, shrinking grocery baskets, bulls vs bears in a jousting arena.
+- The visual metaphor must communicate the concept in under 2 seconds with the sound off — instant decoding without any text.
+- Color palette: deep navy (#0A1628) backgrounds, electric lime (#00FF88) for positive reveals and money imagery, crimson (#CC0000) for crashes and danger, off-white (#F5F5F0) for highlights.
+- Thick confident ink outlines (3-5px equivalent), bold flat color fills, minimal gradients — editorial print aesthetic.
+- Halftone dot textures in shadow areas for retro print feel. Cross-hatching on suits and textured surfaces.
+- Composition: single-panel editorial layout, 9:16 vertical, main subject dominates 60% of frame.
+- High contrast and bold silhouettes that read instantly at mobile phone size.
+- Cinematic lighting: dramatic spotlight on subject, dark surroundings for comedic emphasis.
+- Use scale contrast to make abstract quantities visceral — tiny person vs enormous structure.
 
-REMINDER: Deliver strictly visual storytelling. No words, lettering, logos, UI, or symbolic text anywhere in the artwork.
+REMINDER: Deliver strictly visual storytelling. No words, lettering, logos, speech bubbles, UI, or symbolic text anywhere in the artwork. Expressions, props, and body language communicate the joke.

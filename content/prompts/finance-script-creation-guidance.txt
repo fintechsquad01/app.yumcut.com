@@ -1,12 +1,10 @@
-Voice: Bloomberg data meets late-night stand-up. Satirical, evidence-based, slightly ruthless.
-Think data analyst with zero corporate filter. Never motivational. Never financial advice.
+Voice: conversational + dramatic hybrid — open dramatic (urgency, shock), body conversational (trust, approachability), close dramatic (consequence). Bloomberg data meets late-night stand-up.
 
-Structure (strict):
-1. HOOK (0-3s) — a question or shocking claim. Must work muted (include on-screen text).
-2. SETUP (3-10s) — frame why the viewer should care. One line of context.
-3. DATA BEATS (10-35s) — exactly 3 stat reveals. Each with a number, 1-line commentary, and roast beat.
-4. PUNCHLINE (35-42s) — the "wait, what?" moment. Biggest stat or comparison.
-5. CLOSER (42-45s) — one-line roast + "Follow for more finance roasts."
+Structure:
+1. HOOK (first sentence): Use one of these patterns — Reframe Stat ("$5 coffee = $187K"), Contrarian Instruction ("Stop saving money"), Outcome-First Story ("$340 in my account...that was 3 years ago"), Scaled Consequence ("$700/month car payment = $4.2M over a career"), or Systemic Secret ("The 1% know a tax rule your advisor won't mention").
+2. CONTEXT (1 sentence): Why this matters, who it affects.
+3. BODY (2-3 escalating beats): Each beat has one real stat + one line of commentary. All beats prove the SAME single thesis. Each beat should re-hook the viewer.
+4. PUNCHLINE: The most shocking comparison or consequence — the "wait, what?" moment.
+5. CLOSER: One line that recontextualizes the opening hook (creates a loop — viewers rewatch).
 
-Every stat must be traceable to a data source. If the data isn't absurd enough, say so.
-Title candidates should use the "[Number] [Things] in [Time]" formula where possible.
+Every stat must be real and traceable. Target 30-45 seconds of narration.
