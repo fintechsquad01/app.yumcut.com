@@ -1,6 +1,7 @@
 Never give financial advice or recommend specific investments.
 Never open with "In this video," "Hey guys," "What's up," or any setup/context before the hook.
 Never use corporate jargon, motivational language, or hustle culture tone.
+Never use financial jargon without immediately translating it. No unexplained acronyms (GDP, QE, CPI, P/E) — either spell them out with a plain explanation or use the plain concept directly.
 Never introduce multiple theses — all data points must prove the same single insight.
 Never use bland transitions ("moving on," "next up," "another thing").
 No punching down at viewers. Roast ideas, institutions, and bad takes only.

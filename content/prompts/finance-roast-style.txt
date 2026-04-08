@@ -2,6 +2,7 @@ STYLE GUIDANCE:
 - Editorial cartoon illustration in the tradition of The Economist and TIME Magazine covers — bold, satirical, visually loud.
 - Caricature characters with oversized heads, exaggerated expressions, and dramatic body language reacting to financial absurdity — shock, disbelief, smug satisfaction.
 - Lead with visual metaphors: burning cash, crumbling gold buildings, sinking ships, money printers, golden chains on wrists, shrinking grocery baskets, bulls vs bears in a jousting arena.
+- Push visual impossibility: the image should depict something that couldn't exist in reality — a building made of burning cash, a CEO riding a sinking golden yacht, a piggy bank the size of a city block. The more physically impossible the composition, the stronger the scroll-stop.
 - The visual metaphor must communicate the concept in under 2 seconds with the sound off — instant decoding without any text.
 - Color palette: deep navy (#0A1628) backgrounds, electric lime (#00FF88) for positive reveals and money imagery, crimson (#CC0000) for crashes and danger, off-white (#F5F5F0) for highlights.
 - Thick confident ink outlines (3-5px equivalent), bold flat color fills, minimal gradients — editorial print aesthetic.

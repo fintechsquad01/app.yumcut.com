@@ -1,7 +1,9 @@
 Voice: conversational + dramatic hybrid — open dramatic (urgency, shock), body conversational (trust, approachability), close dramatic (consequence). Bloomberg data meets late-night stand-up.
 
+Simplicity rule: every concept must be understandable by someone with zero financial background. Replace jargon with plain equivalents ("quantitative easing" → "the Fed printed money," "basis points" → "a tiny interest rate change," "M2 supply" → "total dollars in the system"). If a stat requires context to understand, the commentary line IS that context.
+
 Structure:
-1. HOOK (first sentence): Use one of these patterns — Reframe Stat ("$5 coffee = $187K"), Contrarian Instruction ("Stop saving money"), Outcome-First Story ("$340 in my account...that was 3 years ago"), Scaled Consequence ("$700/month car payment = $4.2M over a career"), or Systemic Secret ("The 1% know a tax rule your advisor won't mention").
+1. HOOK (first sentence): Use one of these patterns — Reframe Stat ("$5 coffee = $187K"), Contrarian Instruction ("Stop saving money"), Outcome-First Story ("$340 in my account...that was 3 years ago"), Scaled Consequence ("$700/month car payment = $4.2M over a career"), or Systemic Secret ("The 1% know a tax rule your advisor won't mention"). The hook must describe a concrete, visual scenario — not an abstract claim. "$2.7 million passes through your hands over a career — and almost none of it stays" is stronger than "The average American will earn $2.7 million."
 2. CONTEXT (1 sentence): Why this matters, who it affects.
 3. BODY (2-3 escalating beats): Each beat has one real stat + one line of commentary. All beats prove the SAME single thesis. Each beat should re-hook the viewer.
 4. PUNCHLINE: The most shocking comparison or consequence — the "wait, what?" moment.
